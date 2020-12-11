@@ -1,3 +1,8 @@
+# 6. Blockchain Creating a Block
+
+## 1. Block structure
+- 아래와 같이 block class 만들어보자.
+```ts
 class Block{
     public index:number;
     public hash:string;
@@ -25,3 +30,5 @@ let blockChain:[Block] = [genesisBlock];
 console.log(blockChain);
 
 export {}
+```
+
