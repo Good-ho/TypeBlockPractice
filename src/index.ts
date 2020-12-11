@@ -1,12 +1,19 @@
-const name="hoho",
-age=24,
-gender="male"
-
-const hi=(name:string, age:number, gender:string):boolean=>{
-    console.log(`Hello ${name}, ${age}, ${gender}`);
-    return true;
+interface Human {
+    name:string,
+    age:number,
+    gender:string
 }
 
-hi(name, age, gender);
+const person = {
+    name:"ho",
+    age:22,
+    gender: "male"
+}
+
+const hi=(person:Human):string=>{
+    return `Hello ${person.name}, ${person.age}, ${person.gender}`;    
+}
+
+console.log(hi(person));
 
 export {}
